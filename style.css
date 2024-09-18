@@ -6,8 +6,7 @@
 }
 
 body {
-    background: rgb(0,0,0);
-    background: linear-gradient(145deg, rgba(0,0,0,0.9640231092436975) 0%, rgba(16,99,133,1) 50%, rgba(4,106,205,1) 76%);
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: #fff;
     line-height: 1.6; 
 }
