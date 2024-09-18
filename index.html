@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de .containersenha aleatórias</title>
+    <title>Gerador de Senha aleatórias</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Gerar uma <br><span>Senha aleatória</span></h1>
+
+        <div class="options">
+            <label for="length">Tamanho da senha:</label>
+            <input type="number" id="length" value="12" min="8" max="20">
+
+
+            <label><input type="checkbox" id="include-upper">Incluir letras maiúsculas</label>
+            <label><input type="checkbox" id="include-lower">Incluir letras minúsculas</label>
+            <label><input type="checkbox" id="include-number">Incluir números</label>
+            <label><input type="checkbox" id="include-symbols">Incluir símbolos</label>
+
+        </div>
+
         <div class="display">
             <input type="text" id="senha" placeholder="Senha">
-            <img src="imagens/copy.png" onclick="copiarSenha()">
+            <img src="imagens/copy.png" onclick="copyPassword()">
         </div>
-        <button onclick="criarSenha()"><img src="imagens/generate.png">Gerar Senha</button>
+        <button onclick="generatePassword()"><img src="imagens/generate.png">Gerar Senha</button>
     </div>
 
 
+    <div id="message" class="message hidden">Senha copiada!</div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
